@@ -354,6 +354,82 @@ Header
 .logo {
   width: 320px; }
 
+.main-navigation {
+  background-color: #fff;
+  border-top: 1px solid #e1e1e1;
+  clear: both;
+  width: 100%; }
+
+.main-navigation a {
+  display: block;
+  color: grey; }
+
+.main-navigation li a {
+  padding: .75rem 1.5rem; }
+
+.main-navigation li:first-child {
+  border-left: 1px solid #e1e1e1; }
+
+.main-navigation li {
+  border-right: 1px solid #e1e1e1;
+  float: left; }
+
+.main-navigation .header-search fieldset {
+  border: 0;
+  padding: 0; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0 0 .75rem; }
+
+.search-submit {
+  color: grey;
+  font-size: 1rem;
+  padding: 0;
+  border: none;
+  background-color: transparent; }
+
+.site-branding .social {
+  color: grey;
+  position: absolute;
+  right: 0;
+  top: 17%; }
+
+.site-branding .social ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0; }
+
+.site-branding .social li {
+  display: inline;
+  margin-left: 1.5rem; }
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto; }
+
+/*-------------------------------------
+Front Page
+-------------------------------------*/
+.product-cats {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3rem;
+  width: 80%;
+  margin: 0 auto; }
+
+.product-cats-wrap {
+  -webkit-flex: 0 1 22%;
+      -ms-flex: 0 1 22%;
+          flex: 0 1 22%; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -412,7 +488,8 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px; }
+  padding: 3px;
+  border: none; }
 
 textarea {
   padding-left: 3px;
@@ -435,10 +512,17 @@ a {
 
 /* Menus */
 .main-navigation {
+  background-color: #fff;
+  border-top: 1px solid #e1e1e1;
   clear: both;
-  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   float: left;
-  width: 100%; }
+  width: 100%;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -670,4 +754,52 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.page-title {
+  text-align: center; }
+
 /* Front page */
+.banner {
+  background: url(../../images/hero-bread.jpg) center top no-repeat;
+  background-size: cover;
+  height: 550px;
+  text-align: center;
+  padding-top: 15rem;
+  margin-bottom: 4rem; }
+
+.banner-text {
+  color: white;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 1rem; }
+
+.product-type {
+  max-width: 1024px; }
+
+/* Product page */
+.product-grid {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+  margin-bottom: 1.5rem; }
+
+.product-grid-item {
+  border: 1px solid #e1e1e1;
+  -webkit-flex: 0 1 25%;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  max-width: 25%; }
+
+.product-info {
+  padding: .75rem 1rem; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px; }

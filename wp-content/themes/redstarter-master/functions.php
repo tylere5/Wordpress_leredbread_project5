@@ -49,6 +49,16 @@ function red_starter_content_width() {
 }
 add_action( 'after_setup_theme', 'red_starter_content_width', 0 );
 
+//modify product-grid to show all 12 products
+function lrb_modify_archive_loop( $query ) {
+    if (is_post_type_archive( array('product')) && !is_admin() && $query->is_main_query() ) {
+        $query->set( 'orderby', 'title');
+        $query->set( 'order', 'ASC' );
+        $query->set( 'posts_per_page', 12 );
+    }
+}
+add_action('pre_get_posts', 'lrb_modify_archive_loop');
+
 /**
  * Register widget area.
  *
@@ -90,6 +100,18 @@ function red_starter_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	if ( is_single() ) {
+	wp_enqueue_script( 'jquery' );
+
+	wp_enqueue_script( 'lrb_comment_close', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), false, true );
+
+	wp_localize_script( 'lrb_comment_close', 'lrb_vars', array(
+		'rest_url' => esc_url_raw( rest_url() ),
+		'comment_nonce' => wp_create_nonce( 'wp_rest' ),
+		'post_id' => get_the_ID()
+	) );
+}
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
@@ -102,3 +124,24 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+// function lrb_comment_close_ajax() {
+// 	check_ajax_referer( 'lrb_comment_status', 'security' );
+//
+// 	if ( ! current_user_can( 'edit_posts') ) {
+// 		exit;
+// 	}
+//
+// 	$id = $_POST['the_post_id'];
+//
+// 	if ( isset( $id ) && is_numeric( $id ) ) {
+// 		$the_post = array(
+// 			'ID' => $id,
+// 			'comment_status' => 'open'
+// 		);
+// 		wp_update_post( $the_post );
+// 	}
+//
+// 	exit;
+// }
+// add_action( 'wp_ajax_red_comment_ajax', 'lrb_comment_close_ajax' );

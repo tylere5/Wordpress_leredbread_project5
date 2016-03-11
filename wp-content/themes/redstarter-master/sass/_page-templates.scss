@@ -2,5 +2,56 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+.page-title {
+  text-align: center;
+}
+
 /* Front page */
 //styles for front-page
+
+.banner {
+  background: url(../../images/hero-bread.jpg) center top no-repeat;
+  background-size: cover;
+  height: 550px;
+  text-align: center;
+  padding-top: 15rem;
+  margin-bottom: 4rem;
+}
+
+.banner-text {
+  color: white;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.product-type {
+  max-width: 1024px;
+}
+
+/* Product page */
+//styles for product-page
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.product-grid-item {
+  border: 1px solid #e1e1e1;
+  flex: 0 1 25%;
+  max-width: 25%;
+}
+
+.product-info {
+  padding: .75rem 1rem;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+}

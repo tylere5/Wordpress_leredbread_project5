@@ -1,0 +1,14 @@
+/*-------------------------------------
+Front Page
+-------------------------------------*/
+.product-cats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.product-cats-wrap {
+  flex: 0 1 22%;
+}

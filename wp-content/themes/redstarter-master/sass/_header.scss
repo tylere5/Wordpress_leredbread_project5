@@ -15,3 +15,72 @@ Header
 .logo {
   width: 320px;
 }
+
+.main-navigation {
+  background-color: #fff;
+  border-top: 1px solid #e1e1e1;
+  clear: both;
+  width: 100%;
+}
+
+.main-navigation a {
+  display: block;
+  color: grey;
+}
+
+.main-navigation li a {
+  padding: .75rem 1.5rem;
+}
+
+.main-navigation li:first-child {
+  border-left: 1px solid #e1e1e1;
+}
+
+.main-navigation li {
+  border-right: 1px solid #e1e1e1;
+  float: left;
+}
+
+.main-navigation .header-search fieldset {
+  border: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0 0 .75rem;
+}
+
+.search-submit {
+  color: grey;
+  font-size: 1rem;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.site-branding .social {
+  color: grey;
+  position: absolute;
+  right: 0;
+  top: 17%;
+}
+
+.site-branding .social ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.site-branding .social li {
+  display: inline;
+  margin-left: 1.5rem;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+}

@@ -27,11 +27,13 @@ a {
 /* Menus */
 
 .main-navigation {
+	background-color: #fff;
+  border-top: 1px solid #e1e1e1;
 	clear: both;
-	display: block;
+	display: flex;
 	float: left;
 	width: 100%;
-
+	justify-content: space-between;
 	ul {
 		display: none;
 		list-style: none;

@@ -6,10 +6,10 @@
 define('DB_NAME', 'leredbread2');
 
 /** MySQL database username */
-define('DB_USER', 'wp');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'wp');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -34,7 +34,7 @@ $table_prefix = 'wp_';
 
 
 define('WP_DEBUG', true);
-define('WP_DEBUG_DISPLAY', false);
+define('WP_DEBUG_DISPLAY', true);
 define('WP_DEBUG_LOG', true);
 define('SCRIPT_DEBUG', true);
 define('JETPACK_DEV_DEBUG', true);
