@@ -18,13 +18,13 @@ get_header(); ?>
           <div class="about-content-left">
             <img src="<?php echo get_template_directory_uri() ?>/images/team.jpg" alt="Le Red Bread team">
             <h3>Le Red Bread Team</h3>
-            <p class="about-text-left"><?php echo esc_html(CFS()->get( 'team_copy' ) ); ?></p>
+            <?php echo CFS()->get( 'team_copy' ); ?>
           </div>
 
           <div class="about-content-right">
             <img src="<?php echo get_template_directory_uri() ?>/images/bakery.jpg" alt="Le Red Bread Bakery">
             <h3>Le Red Bread Bakery</h3>
-            <p class="about-text-right"><?php echo esc_html(CFS()->get( 'bakery_copy' ) ); ?></p>
+            <p class="about-text-right"><?php echo CFS()->get( 'bakery_copy' ); ?></p>
           </div>
         </div>
 
