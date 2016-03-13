@@ -30,6 +30,67 @@
   max-width: 1024px;
 }
 
+/* About Page */
+//styles for about-page
+
+.about-main-container {
+  width: 1024px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.about-title {
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+.about-tagline {
+  text-align: center;
+}
+
+.about-content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-left {
+  flex: 0 1 47.5%;
+
+  h3 {
+    margin: 0;
+  }
+}
+
+.about-right {
+  flex: 0 1 47.5%;
+
+  h3 {
+    margin: 0;
+  }
+}
+
+.team-memo {
+  color: #a1a1a1;
+  margin: 0 0 1rem;
+}
+
+.baker-memo {
+  color: #a1a1a1;
+  margin: 0 0 1rem;
+}
+
+.about-story {
+  line-height: 1rem;
+  margin-bottom: 4.5rem;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2.25rem;
+    margin-top: 1rem;
+  }
+}
+
 /* Product page */
 //styles for product-page
 
@@ -54,4 +115,151 @@
   margin-left: auto;
   margin-right: auto;
   width: 1024px;
+}
+
+/* Contact Page */
+
+.contact-content-area {
+  .entry-title {
+    text-transform: uppercase;
+    margin: 0 0 .25rem 0;
+  }
+}
+
+.entry-content {
+  h2 {
+    color: grey;
+  }
+}
+
+.wpcf7-form {
+  color:grey;
+  font-weight: 700;
+
+  span {
+    color: #db272a
+  }
+
+  input, textarea {
+    background-color:#fafafa;
+  }
+}
+
+.name {
+  float: left;
+  margin-right: 1%;
+  width: 49%;
+
+  input {
+    width: 100%
+  }
+}
+
+.email {
+  float: right;
+  margin-left: 1%;
+  width: 49%;
+
+  input {
+    width: 100%;
+  }
+}
+
+.subject {
+  input {
+    width: 100%;
+  }
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+  border: none;
+  border-radius: 3px;
+  background: #400c0d;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  box-shadow: none;
+  font-family: $font-main;
+  font-weight: normal;
+  font-size: $font-base;
+  color: white;
+}
+
+.page-container {
+  width: 1024px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.contact-content-area {
+  width: 73%;
+  padding-right: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.sidebar-area {
+  width: 27%;
+  border-left: solid 1px #e1e1e1;
+  padding-left: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.widget-title {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: .75rem;
+  color: #333;
+
+  p {
+    line-height: .5rem;
+  }
+}
+
+.widget_archive {
+  ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+
+    a {
+      text-decoration: none;
+      color: #db272a;
+    }
+
+    a:hover {
+      color: #400c0d;
+      text-decoration: underline;
+    }
+  }
+}
+
+h2.widget-title {
+  margin: 0 0 .75rem 0;
+}
+
+.contact-meta {
+  p {
+    display: flex;
+  }
+
+  i {
+    margin-right: .5rem;
+  }
+
+  a {
+    color: #db272a;
+    line-height: .25rem;
+  }
+}
+
+.day-of-week {
+  color: #db272a;
+  font-weight: bold;
+  padding-right: .25rem;
+}
+
+.lrb-hours-class {
+  line-height: 1rem;
 }
