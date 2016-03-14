@@ -6,8 +6,7 @@
   text-align: center;
 }
 
-/* Front page */
-//styles for front-page
+/* Front page ----------------------------------------------------*/
 
 .banner {
   background: url(../../images/hero-bread.jpg) no-repeat center top;
@@ -156,8 +155,7 @@
   }
 }
 
-/* About Page */
-//styles for about-page
+/* About Page -----------------------------------------------------*/
 
 .about-main-container {
   width: 1024px;
@@ -217,8 +215,7 @@
   }
 }
 
-/* Product page */
-//styles for product-page
+/* Product page --------------------------------------------------*/
 
 
 .product-grid {
@@ -244,7 +241,7 @@
   width: 1024px;
 }
 
-/*Product-Taxonomy Page*/
+/*Product-Taxonomy Page------------------------------------------*/
 
 .taxonomy-type-container {
   width: 1024px;
@@ -317,7 +314,7 @@
   }
 }
 
-/* Single-Products Page */
+/* Single-Products Page ----------------------------------------*/
 
 .single-product-main-container {
   width: 1024px;
@@ -341,7 +338,7 @@
 
 }
 
-/* Contact Page */
+/* Contact Page ------------------------------------------------*/
 
 .contact-content-area {
   .entry-title {
@@ -488,7 +485,7 @@ h2.widget-title {
   line-height: 1rem;
 }
 
-/* Blog Page */
+/* Blog Page -----------------------------------------------*/
 
 .blog-container {
   width: 1024px;
@@ -524,5 +521,155 @@ h2.widget-title {
 
   .entry-title {
     margin: 0;
+  }
+}
+
+/* Single Blog Post Page ------------------------------------------ */
+
+.blog-single-container {
+  width: 1024px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.blog-single-content-area {
+  width: 73%;
+  padding-top: 3rem;
+  padding-right: 5%;
+  padding-bottom: 3rem;
+
+  a {
+    color: #db272a;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #400c0d;
+    text-decoration: underline;
+  }
+
+  .entry-header {
+    h1 {
+      text-transform: uppercase;
+      line-height: 2rem;
+      margin-bottom: .25rem;
+    }
+  }
+
+  .entry-content {
+    blockquote {
+      border-left: 8px solid #db272a;
+      color: #a1a1a1;
+      font-size: 19px;
+      font-size: 1.2rem;
+      margin-left: 0;
+      padding-left: 1.5rem;
+    }
+  }
+
+  .cat-links {
+    margin-right: 1.5rem;
+  }
+
+  .comments-title {
+    color: #808080;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+
+  .comment-list {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .comment {
+    border-bottom: 1px dashed #d2d2d2;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .comment-body {
+    display: flex;
+
+    p {
+      margin-bottom: .75rem;
+    }
+  }
+
+  .comment-author {
+    cite {
+      font-weight: bold;
+      font-style: normal;
+    }
+  }
+
+  .comment-metadata {
+    color: #a1a1a1;
+  }
+
+  .reply {
+    display: none;
+  }
+
+  .comment-list article {
+    margin-bottom: 0;
+  }
+
+  .comment-notes {
+    color: #222;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .comment-form {
+    color: #808080;
+    font-weight: bold;
+
+    span {
+      color: #db272a;
+    }
+
+    input, textarea {
+      background-color: #fafafa;
+    }
+  }
+
+  .comment-form-author {
+    float: left;
+    margin-right: 1%;
+    width: 49%;
+
+    input {
+      width: 100%;
+    }
+  }
+
+  .comment-form-email {
+    float: right;
+    margin-left: 1%;
+    width: 49%;
+
+    input {
+      width: 100%;
+    }
+  }
+
+  .comment-form-url {
+    input {
+      width: 100%;
+    }
+  }
+
+  .form-submit input {
+    border: none;
+    border-radius: 3px;
+    background: #400c0d;
+    color: #ffffff;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    box-shadow: none;
+    font-weight: normal;
+    font-family: "open_sans", 'sans-serif'
   }
 }
