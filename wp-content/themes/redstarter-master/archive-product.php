@@ -18,6 +18,26 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 				<p>We are a team of creative and talented individuals who love making delicious treats.</p>
+				<hr class="decorative"></hr>
+
+				<section class="product-type container">
+					<div class="product-cats">
+						<?php
+							$terms = get_terms( 'product-type' );
+						?>
+						<?php if ( ! empty( $terms ) ) : ?>
+							<?php foreach ($terms as $term) : ?>
+									<div class="product-cats-wrap">
+										<a href="<?php echo get_term_link($term); ?>">
+											<img src="<?php echo get_template_directory_uri() . '/images\/' . $term->slug; ?>.png" alt="" />
+											<h3><?php echo $term->name; ?></h3>
+										</a>
+									</div>
+							<?php endforeach; ?>
+					<?php endif; ?>
+				</div>
+			</section>
+
 			</header><!-- .page-header -->
 
 			<div class="product-grid">

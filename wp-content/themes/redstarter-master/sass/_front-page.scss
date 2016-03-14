@@ -5,10 +5,18 @@ Front Page
   display: flex;
   justify-content: space-between;
   margin-bottom: 3rem;
-  width: 80%;
+  width: 87%;
   margin: 0 auto;
 }
 
 .product-cats-wrap {
   flex: 0 1 22%;
+
+  h3 {
+    color: #400c0d;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }

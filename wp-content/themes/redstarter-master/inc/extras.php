@@ -51,8 +51,10 @@ function lrb_archive_title() {
 	if ( is_post_type_archive( array( 'product' ) ) ) {
 		 $title = 'Our Products Are Made Fresh Daily';
 	} elseif ( is_tax( 'product-type' ) ) {
-		$title = '???';
-	}
+		$title = sprintf( '%1$s', single_term_title( '', false ) );
+	} elseif ( is_post_type_archive( 'testimonial' ) ) {
+		  $title = 'Testimonials';
+	  }
 	return $title;
 }
 add_filter( 'get_the_archive_title', 'lrb_archive_title' );

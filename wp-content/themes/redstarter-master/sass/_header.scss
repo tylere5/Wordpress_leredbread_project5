@@ -13,12 +13,14 @@ Header
 }
 
 .logo {
-  width: 320px;
+  width: 300px;
 }
 
 .main-navigation {
   background-color: #fff;
   border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  box-shadow: 0 2px 3px #e1e1e1;
   clear: both;
   width: 100%;
 }
@@ -53,7 +55,7 @@ fieldset {
 }
 
 .search-submit {
-  color: grey;
+  color: #a1a1a1;
   font-size: 1rem;
   padding: 0;
   border: none;
@@ -61,10 +63,10 @@ fieldset {
 }
 
 .site-branding .social {
-  color: grey;
+  color: #a1a1a1;
   position: absolute;
   right: 0;
-  top: 17%;
+  top: 13%;
 }
 
 .site-branding .social ul {

@@ -14,7 +14,7 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-	<?php wp_head(); ?>
+		<?php wp_head(); ?>
 	</head>
 
 	<body <?php body_class(); ?>>
@@ -22,28 +22,30 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-				<div class="site-branding">
-					<div class="logo">
-						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				
+					<div class="site-branding">
+						<div class="logo">
+							<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
-					<div class="social">
-						<ul>
-							<li><i class="fa fa-facebook"></i></li>
-							<li><i class="fa fa-twitter"></i></li>
-							<li><i class="fa fa-google-plus"></i></li>
-							<li><i class="fa fa-envelope"></i></li>
-						</ul>
+						<div class="social">
+							<ul>
+								<li><i class="fa fa-facebook"></i></li>
+								<li><i class="fa fa-twitter"></i></li>
+								<li><i class="fa fa-google-plus"></i></li>
+								<li><i class="fa fa-envelope"></i></li>
+							</ul>
+						</div>
 					</div>
-				</div>
-						<img src="<?php bloginfo('template_directory'); ?>/images/lrb-logo.svg" class="logo" alt="Le Red Bread Logo">
+							<img src="<?php bloginfo('template_directory'); ?>/images/lrb-logo.svg" class="logo" alt="Le Red Bread Logo">
 
-				</div><!-- .site-branding -->
+					</div><!-- .site-branding -->
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<?php get_search_form(); ?>
-				</nav><!-- #site-navigation -->
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						<?php get_search_form(); ?>
+					</nav><!-- #site-navigation -->
+
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

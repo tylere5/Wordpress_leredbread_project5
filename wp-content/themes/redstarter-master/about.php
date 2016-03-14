@@ -34,7 +34,7 @@ get_header(); ?>
           <h2>Our Story</h2>
           <?php echo CFS()->get ( 'our_story' ); ?>
         </div>
-        <section class="redirect-section">
+        <section class="checkout-section">
           <p>
             <span>Feel free to contact us with any questions comments or suggestions. We even take custom orders!</span>
             <a href="/contact/" class="front-button">Contact Us</a>

@@ -33,7 +33,7 @@ get_header(); ?>
 		</div>
 	</section>
 
-	<section class="redirect-section">
+	<section class="checkout-section container">
 		<p>
 			<span>All our products are made fresh daily from locally-sourced ingredients. Our menu is updated frequently.</span>
 			<a href="/products/" class="front-button">See Our Products</a>
@@ -43,6 +43,7 @@ get_header(); ?>
 	<section class="latest-news">
 		<div class="latest-news-container">
 			<h2>Our Latest News</h2>
+			<hr class="decorative"></hr>
 			<ul>
 				<?php
 	        $args = array( 'post_type'=> 'post', 'posts_per_page' => 4 );
@@ -59,7 +60,7 @@ get_header(); ?>
 						<div class="post-info-wrap">
 							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 							<span class="entry-meta">
-								<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+								<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
 							</span>
 		      			<?php endforeach; wp_reset_postdata(); ?>
 						</div>
