@@ -22,22 +22,25 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-				
+
 					<div class="site-branding">
-						<div class="logo">
-							<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<div class="site-branding-inner container">
+							<div class="logo">
+								<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
-						<div class="social">
-							<ul>
-								<li><i class="fa fa-facebook"></i></li>
-								<li><i class="fa fa-twitter"></i></li>
-								<li><i class="fa fa-google-plus"></i></li>
-								<li><i class="fa fa-envelope"></i></li>
-							</ul>
+								<div class="social">
+									<ul>
+										<li><i class="fa fa-facebook"></i></li>
+										<li><i class="fa fa-twitter"></i></li>
+										<li><i class="fa fa-google-plus"></i></li>
+										<li><i class="fa fa-envelope"></i></li>
+									</ul>
+								</div>
+								</div>
+								<a href="http://localhost:3000" rel="home">
+								<img src="<?php bloginfo('template_directory'); ?>/images/lrb-logo.svg" class="logo" alt="Le Red Bread Logo">
+								</a>
 						</div>
-					</div>
-							<img src="<?php bloginfo('template_directory'); ?>/images/lrb-logo.svg" class="logo" alt="Le Red Bread Logo">
-
 					</div><!-- .site-branding -->
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">

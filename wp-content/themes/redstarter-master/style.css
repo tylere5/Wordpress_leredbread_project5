@@ -452,7 +452,7 @@ fieldset {
 .site-branding .social {
   color: #a1a1a1;
   position: absolute;
-  right: 0;
+  right: 11%;
   top: 13%; }
 
 .site-branding .social ul {
@@ -1202,7 +1202,8 @@ h2.widget-title {
 
 .contact-meta a {
   color: #db272a;
-  line-height: .25rem; }
+  line-height: .25rem;
+  text-decoration: none; }
 
 .day-of-week {
   color: #db272a;
@@ -1290,6 +1291,12 @@ h2.widget-title {
   .blog-single-content-area .comment-author cite {
     font-weight: bold;
     font-style: normal; }
+  .blog-single-content-area .comment-author-avatar {
+    border-radius: 50%;
+    height: 64px;
+    margin-right: 1.5rem;
+    overflow: hidden;
+    width: 64px; }
   .blog-single-content-area .comment-metadata {
     color: #a1a1a1; }
   .blog-single-content-area .reply {
@@ -1332,6 +1339,72 @@ h2.widget-title {
     box-shadow: none;
     font-weight: normal;
     font-family: "open_sans", 'sans-serif'; }
+
+/* Search Page ------------------------------------------------- */
+.search-page-container {
+  width: 1024px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto; }
+
+.search-content-area {
+  width: 73%;
+  padding-top: 3rem;
+  padding-right: 5%;
+  padding-bottom: 3rem; }
+  .search-content-area .page-header {
+    border-bottom: 1px dashed #a1a1a1; }
+  .search-content-area .page-title {
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 0; }
+  .search-content-area .entry-title {
+    margin: 0; }
+    .search-content-area .entry-title a {
+      color: #db272a;
+      text-decoration: none; }
+    .search-content-area .entry-title a:hover {
+      color: #400c0d;
+      text-decoration: underline; }
+  .search-content-area .entry-summary a {
+    color: #db272a;
+    text-decoration: none;
+    font-weight: bold; }
+  .search-content-area .entry-summary a:hover {
+    color: #400c0d;
+    text-decoration: underline; }
+
+/* 404 Error Page --------------------------------------------------*/
+.error-page-container {
+  width: 1024px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto; }
+
+.error-page-content {
+  width: 73%;
+  padding-top: 3rem;
+  padding-right: 5%;
+  padding-bottom: 3rem; }
+
+.search-form fieldset {
+  padding-left: 0; }
+  .search-form fieldset label {
+    display: inline-block; }
+
+.widget h2 {
+  color: #808080; }
+
+.widget ul {
+  list-style: none;
+  line-height: 2;
+  margin-left: 0;
+  padding-left: 0; }
+  .widget ul a {
+    text-decoration: none;
+    color: #db272a; }
 
 /*---------------------------------------------------
 Footer

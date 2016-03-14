@@ -12,6 +12,7 @@ get_header(); ?>
         <header class="about-header">
           <h1 class="about-title"><?php echo esc_html(CFS()->get( 'title' ) ); ?></h1>
           <p class="about-tagline"><?php echo esc_html(CFS()->get( 'tagline' ) ); ?></p>
+          <hr class="decorative"></hr>
         </header>
 
         <div class="about-content-container">
