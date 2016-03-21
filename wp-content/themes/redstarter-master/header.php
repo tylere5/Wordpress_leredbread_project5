@@ -36,7 +36,7 @@
 									</ul>
 								</div>
 								</div>
-								<a href="http://localhost:3000" rel="home">
+								<a href="http://leredbread2.dev/" rel="home">
 								<img src="<?php bloginfo('template_directory'); ?>/images/lrb-logo.svg" class="logo" alt="Le Red Bread Logo">
 								</a>
 						</div>
