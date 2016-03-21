@@ -453,7 +453,7 @@ fieldset {
   color: #a1a1a1;
   position: absolute;
   right: 11%;
-  top: 13%; }
+  top: 17%; }
 
 .site-branding .social ul {
   list-style: none;
@@ -1105,6 +1105,12 @@ object {
   padding-bottom: 3rem; }
 
 /* Contact Page ------------------------------------------------*/
+.page-container {
+  width: 73%;
+  padding-top: 3rem;
+  padding-right: 5%;
+  padding-bottom: 3rem; }
+
 .contact-content-area .entry-title {
   text-transform: uppercase;
   margin: 0 0 .25rem 0; }
